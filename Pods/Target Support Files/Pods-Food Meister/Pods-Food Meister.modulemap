@@ -1,0 +1,6 @@
+framework module Pods_Food_Meister {
+  umbrella header "Pods-Food Meister-umbrella.h"
+
+  export *
+  module * { export * }
+}

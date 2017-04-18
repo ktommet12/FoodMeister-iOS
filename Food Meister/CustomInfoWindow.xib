@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1217" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="CustomInfoWindow" customModule="Food_Meister" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="282" height="159"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Kr-g6-DQU">
+                    <rect key="frame" x="9" y="8" width="265" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="4ye-mv-Zb8"/>
+                        <constraint firstAttribute="width" constant="265" id="clS-bZ-YuJ"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="11"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vee-y5-dv0">
+                    <rect key="frame" x="9" y="37" width="265" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="aPm-25-1zU"/>
+                        <constraint firstAttribute="width" constant="265" id="wkE-ej-VI3"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="11"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="rCH-sK-jtD">
+                    <rect key="frame" x="10" y="119" width="262" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="SZ0-NY-nNT"/>
+                    </constraints>
+                </stackView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="rCH-sK-jtD" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="10" id="5gL-Qm-G1Z"/>
+                <constraint firstAttribute="bottom" secondItem="rCH-sK-jtD" secondAttribute="bottom" constant="10" id="96f-wW-TLK"/>
+                <constraint firstAttribute="trailing" secondItem="rCH-sK-jtD" secondAttribute="trailing" constant="10" id="YUY-4Q-Dam"/>
+                <constraint firstItem="vee-y5-dv0" firstAttribute="top" secondItem="1Kr-g6-DQU" secondAttribute="bottom" constant="8" id="ZyR-SO-MgF"/>
+                <constraint firstAttribute="trailing" secondItem="vee-y5-dv0" secondAttribute="trailing" constant="8" id="bj6-Zw-Htp"/>
+                <constraint firstAttribute="trailing" secondItem="1Kr-g6-DQU" secondAttribute="trailing" constant="8" id="d4y-BG-uEP"/>
+                <constraint firstItem="1Kr-g6-DQU" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="8" id="iLw-hi-8MM"/>
+                <constraint firstItem="rCH-sK-jtD" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="10" id="nHk-04-R56"/>
+                <constraint firstAttribute="bottom" secondItem="rCH-sK-jtD" secondAttribute="bottom" constant="10" id="zgw-xP-Xxa"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="locationAllergyStackView" destination="rCH-sK-jtD" id="qev-rk-YsZ"/>
+                <outlet property="restaurantAddress" destination="vee-y5-dv0" id="S2g-O4-Zya"/>
+                <outlet property="restaurantName" destination="1Kr-g6-DQU" id="Wpl-NZ-kM8"/>
+            </connections>
+            <point key="canvasLocation" x="457" y="392.5"/>
+        </view>
+    </objects>
+</document>
